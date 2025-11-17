@@ -17,17 +17,12 @@
       thanks
       
       
-      
-      
-      
-      
-      
-      fuckkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-      
-      fuck roblox
 ]]
 
+print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")print("FEBYPASS")
+
 local MarketplaceService = game:GetService("MarketplaceService")
+
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local localPlayer = Players.LocalPlayer
@@ -50,21 +45,16 @@ end
 local mainGui = Instance.new("ScreenGui")
 mainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 mainGui.Parent = game.CoreGui
+mainGui.ResetOnSpawn = false
 
 
-local lighting = game:GetService("Lighting")
-for _, effect in lighting:GetChildren() do
-	if effect:IsA("BlurEffect") then
-		effect:Destroy()
-	end
-end
 
 local mainFrame = Instance.new("Frame")
 mainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 mainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-mainFrame.Size = UDim2.new(0, 420, 0, 540)
-mainFrame.BackgroundTransparency = 0
-mainFrame.BackgroundColor3 = Color3.fromRGB(245, 248, 255)
+mainFrame.Size = UDim2.new(0, 420, 0, 530)
+mainFrame.BackgroundTransparency = 0.8
+mainFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 mainFrame.BorderSizePixel = 0
 mainFrame.Parent = mainGui
 
@@ -73,8 +63,8 @@ mainCorner.CornerRadius = UDim.new(0, 28)
 mainCorner.Parent = mainFrame
 
 local mainStroke = Instance.new("UIStroke")
-mainStroke.Color = Color3.fromRGB(180, 220, 255)
-mainStroke.Thickness = 3
+mainStroke.Color = Color3.fromRGB(255, 0, 4)
+mainStroke.Thickness = 2.5
 mainStroke.Transparency = 0.3
 mainStroke.Parent = mainFrame
 
@@ -91,7 +81,7 @@ local titleLabel = Instance.new("TextLabel")
 titleLabel.Text = "Developer Products"
 titleLabel.Font = Enum.Font.GothamBlack
 titleLabel.TextSize = 28
-titleLabel.TextColor3 = Color3.fromRGB(60, 120, 255)
+titleLabel.TextColor3 = Color3.fromRGB(220, 0, 4)
 titleLabel.BackgroundTransparency = 1
 titleLabel.Position = UDim2.new(0.5, -120, 0, 24)
 titleLabel.Size = UDim2.new(0, 240, 0, 36)
@@ -99,10 +89,10 @@ titleLabel.AnchorPoint = Vector2.new(0, 0)
 titleLabel.Parent = mainFrame
 
 local subtitleLabel = Instance.new("TextLabel")
-subtitleLabel.Text = "by Baby Outmoon"
+subtitleLabel.Text = "by Baby_Outmoon"
 subtitleLabel.Font = Enum.Font.Gotham
 subtitleLabel.TextSize = 16
-subtitleLabel.TextColor3 = Color3.fromRGB(120, 180, 255)
+subtitleLabel.TextColor3 = Color3.fromRGB(163, 0, 3)
 subtitleLabel.BackgroundTransparency = 1
 subtitleLabel.Position = UDim2.new(0.5, -120, 0, 60)
 subtitleLabel.Size = UDim2.new(0, 240, 0, 22)
@@ -130,7 +120,7 @@ buyAllProductsButton.Font = Enum.Font.GothamBold
 buyAllProductsButton.Text = "Buy All Products"
 buyAllProductsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 buyAllProductsButton.TextSize = 18
-buyAllProductsButton.BackgroundColor3 = Color3.fromRGB(60, 180, 255)
+buyAllProductsButton.BackgroundColor3 = Color3.fromRGB(200, 0, 3)
 buyAllProductsButton.Position = UDim2.new(0.5, -110, 0, 100)
 buyAllProductsButton.Size = UDim2.new(0, 220, 0, 40)
 buyAllProductsButton.AnchorPoint = Vector2.new(0, 0)
@@ -140,20 +130,20 @@ local buyAllCorner = Instance.new("UICorner")
 buyAllCorner.CornerRadius = UDim.new(0, 16)
 buyAllCorner.Parent = buyAllProductsButton
 
--- Remove global Refresh Page Button
--- (No creation of refreshButton here)
 
 local containerFrame = Instance.new("Frame")
-containerFrame.BackgroundTransparency = 0
-containerFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+containerFrame.BackgroundTransparency = 1
+containerFrame.BackgroundColor3 = Color3.fromRGB(161, 0, 3)
 containerFrame.BorderSizePixel = 0
 containerFrame.Position = UDim2.new(0.5, -180, 0, 150)
+containerFrame.BorderSizePixel = 0
+containerFrame.Visible = false
 containerFrame.Size = UDim2.new(0, 360, 0, 350)
 containerFrame.AnchorPoint = Vector2.new(0, 0)
 containerFrame.Parent = mainFrame
 Instance.new("UICorner", containerFrame).CornerRadius = UDim.new(0, 20)
 local containerStroke = Instance.new("UIStroke")
-containerStroke.Color = Color3.fromRGB(180, 220, 255)
+containerStroke.Color = Color3.fromRGB(116, 0, 2)
 containerStroke.Thickness = 2
 containerStroke.Transparency = 0.5
 containerStroke.Parent = containerFrame
@@ -169,22 +159,24 @@ scrollingFrame.Parent = containerFrame
 
 local listLayout = Instance.new("UIListLayout")
 listLayout.SortOrder = Enum.SortOrder.LayoutOrder
-listLayout.Padding = UDim.new(0, 16)
+listLayout.Padding = UDim.new(0, 10)
 listLayout.Parent = scrollingFrame
+listLayout.VerticalAlignment = Enum.VerticalAlignment.Top
+listLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 
 
 local exampleProductFrame = Instance.new("Frame")
-exampleProductFrame.BackgroundTransparency = 0
-exampleProductFrame.BackgroundColor3 = Color3.fromRGB(245, 248, 255)
+exampleProductFrame.BackgroundTransparency = 0.5
+exampleProductFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 exampleProductFrame.BorderSizePixel = 0
-exampleProductFrame.Size = UDim2.new(1, -24, 0, 120)
+exampleProductFrame.Size = UDim2.new(1, -10, 0, 124)
 exampleProductFrame.Position = UDim2.new(0, 12, 0, 0)
 exampleProductFrame.Visible = false
 exampleProductFrame.Name = "ExampleFrame"
 exampleProductFrame.Parent = scrollingFrame
 Instance.new("UICorner", exampleProductFrame).CornerRadius = UDim.new(0, 14)
 local cardStroke = Instance.new("UIStroke")
-cardStroke.Color = Color3.fromRGB(120, 180, 255)
+cardStroke.Color = Color3.fromRGB(177, 0, 3)
 cardStroke.Thickness = 1
 cardStroke.Transparency = 0.5
 cardStroke.Parent = exampleProductFrame
@@ -202,7 +194,7 @@ local nameLabel = Instance.new("TextLabel", exampleProductFrame)
 nameLabel.Name = "NameLabel"
 nameLabel.Font = Enum.Font.GothamSemibold
 nameLabel.Text = "Product Name:"
-nameLabel.TextColor3 = Color3.fromRGB(60, 120, 255)
+nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 nameLabel.TextSize = 18
 nameLabel.TextXAlignment = Enum.TextXAlignment.Left
 nameLabel.BackgroundTransparency = 1
@@ -213,7 +205,7 @@ local idLabel = Instance.new("TextLabel", exampleProductFrame)
 idLabel.Name = "IDLabel"
 idLabel.Font = Enum.Font.Gotham
 idLabel.Text = "Product ID:"
-idLabel.TextColor3 = Color3.fromRGB(120, 180, 255)
+idLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 idLabel.TextSize = 15
 idLabel.TextXAlignment = Enum.TextXAlignment.Left
 idLabel.BackgroundTransparency = 1
@@ -224,7 +216,7 @@ local descLabel = Instance.new("TextLabel", exampleProductFrame)
 descLabel.Name = "DescLabel"
 descLabel.Font = Enum.Font.Gotham
 descLabel.Text = "Product Description:"
-descLabel.TextColor3 = Color3.fromRGB(120, 120, 120)
+descLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 descLabel.TextSize = 14
 descLabel.TextXAlignment = Enum.TextXAlignment.Left
 descLabel.BackgroundTransparency = 1
@@ -235,7 +227,7 @@ local priceLabel = Instance.new("TextLabel", exampleProductFrame)
 priceLabel.Name = "PriceLabel"
 priceLabel.Font = Enum.Font.GothamBold
 priceLabel.Text = "Product Price:"
-priceLabel.TextColor3 = Color3.fromRGB(60, 180, 255)
+priceLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 priceLabel.TextSize = 15
 priceLabel.TextXAlignment = Enum.TextXAlignment.Left
 priceLabel.BackgroundTransparency = 1
@@ -244,7 +236,7 @@ priceLabel.Size = UDim2.new(0.5, 0, 0, 18)
 
 local divider = Instance.new("Frame", exampleProductFrame)
 divider.Name = "Divider"
-divider.BackgroundColor3 = Color3.fromRGB(180, 220, 255)
+divider.BackgroundColor3 = Color3.fromRGB(97, 0, 2)
 divider.BackgroundTransparency = 0.6
 divider.BorderSizePixel = 0
 divider.Position = UDim2.new(0, 0, 0.82, 0)
@@ -265,8 +257,8 @@ buyButton.Font = Enum.Font.GothamBold
 buyButton.Text = "Buy Product"
 buyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 buyButton.TextSize = 13
-buyButton.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
-buyButton.Position = UDim2.new(0.62, 0, 0.62, 0)
+buyButton.BackgroundColor3 = Color3.fromRGB(170, 0, 6)
+buyButton.Position = UDim2.new(0.70, 0, 0.10, 0)
 buyButton.Size = UDim2.new(0, 90, 0, 22)
 Instance.new("UICorner", buyButton).CornerRadius = UDim.new(0, 10)
 
@@ -276,10 +268,12 @@ refreshProductButton.Font = Enum.Font.GothamBold
 refreshProductButton.Text = "Refresh"
 refreshProductButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 refreshProductButton.TextSize = 13
-refreshProductButton.BackgroundColor3 = Color3.fromRGB(120, 180, 255)
-refreshProductButton.Position = UDim2.new(0.62, 0, 0.22, 0)
+refreshProductButton.BackgroundColor3 = Color3.fromRGB(117, 0, 2)
+refreshProductButton.Position = UDim2.new(0.70, 0, 0.2, 20)
 refreshProductButton.Size = UDim2.new(0, 90, 0, 22)
 Instance.new("UICorner", refreshProductButton).CornerRadius = UDim.new(0, 10)
+
+containerFrame.Visible = true
 
 local function populateProducts()
 	for _, child in scrollingFrame:GetChildren() do
@@ -311,7 +305,7 @@ local function populateProducts()
 		local originalColor = buyAllProductsButton:GetAttribute("OriginalColor")
 
 		buyAllProductsButton.Text = "Processing..."
-		buyAllProductsButton.BackgroundColor3 = Color3.fromRGB(255, 170, 85)
+		buyAllProductsButton.BackgroundColor3 = Color3.fromRGB(203, 0, 3)
 
 		for _, productInfo in allProductsInfo do
 			Finished(productInfo)
@@ -320,7 +314,7 @@ local function populateProducts()
 
 		activeResetThreads[buyAllProductsButton] = task.spawn(function()
 			buyAllProductsButton.Text = "Done!"
-			buyAllProductsButton.BackgroundColor3 = Color3.fromRGB(120, 255, 180)
+			buyAllProductsButton.BackgroundColor3 = Color3.fromRGB(255, 12, 16)
 			task.wait(1.5)
 			buyAllProductsButton.Text = originalText
 			buyAllProductsButton.BackgroundColor3 = originalColor
@@ -355,14 +349,14 @@ local function populateProducts()
 			local originalColor = productBuyButton:GetAttribute("OriginalColor")
 
 			productBuyButton.Text = "Processing..."
-			productBuyButton.BackgroundColor3 = Color3.fromRGB(255, 170, 85)
+			productBuyButton.BackgroundColor3 = Color3.fromRGB(76, 0, 1)
 
 			Finished(productInfo)
 
 			activeResetThreads[productBuyButton] = task.spawn(function()
 				task.wait(0.5)
 				productBuyButton.Text = "Done!"
-				productBuyButton.BackgroundColor3 = Color3.fromRGB(120, 255, 180)
+				productBuyButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 				task.wait(1.5)
 				productBuyButton.Text = originalText
 				productBuyButton.BackgroundColor3 = originalColor
@@ -373,7 +367,7 @@ local function populateProducts()
 		local productRefreshButton = productFrame.RefreshProductButton
 		productRefreshButton.MouseButton1Click:Connect(function()
 			productRefreshButton.Text = "Refreshing..."
-			productRefreshButton.BackgroundColor3 = Color3.fromRGB(255, 170, 85)
+			productRefreshButton.BackgroundColor3 = Color3.fromRGB(72, 0, 1)
 			local infoSuccess, refreshedInfo = pcall(function()
 				return MarketplaceService:GetProductInfo(productInfo.ProductId, Enum.InfoType.Product)
 			end)
@@ -385,7 +379,7 @@ local function populateProducts()
 			end
 			task.wait(1)
 			productRefreshButton.Text = "Refresh"
-			productRefreshButton.BackgroundColor3 = Color3.fromRGB(120, 180, 255)
+			productRefreshButton.BackgroundColor3 = Color3.fromRGB(117, 0, 2)
 		end)
 
 		productIndex = productIndex + 1
